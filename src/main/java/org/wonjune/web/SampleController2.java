@@ -17,10 +17,12 @@ public class SampleController2 {
 		
 		//make sample data
 		ProductVO product = new ProductVO("Sample Product", 10000);
+		ProductVO product2 = new ProductVO("Sample Product2", 20000);
 		
 		logger.info("doD");
 		
 		model.addAttribute(product);
+		model.addAttribute("product2", product2);
 		
 		return "productDetail";
 	}
