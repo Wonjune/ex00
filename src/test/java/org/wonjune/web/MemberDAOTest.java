@@ -15,18 +15,23 @@ public class MemberDAOTest {
 	@Inject
 	private MemberDAO dao;
 	
-	@Test
-	public void testTime() throws Exception{
-		System.out.println(dao.getTime());
-	}
+//	@Test
+//	public void testTime() throws Exception{
+//		System.out.println(dao.getTime());
+//	}
+	
+//	@Test
+//	public void tgestInsertMember() throws Exception{
+//		MemberVO vo = new MemberVO();
+//		vo.setUserid("user00");
+//		vo.setUserpw("user00");
+//		vo.setUsername("USER00");
+//		vo.setEmail("user00@aaa.com");
+//		dao.insertMember(vo);
+//	}
 	
 	@Test
-	public void tgestInsertMember() throws Exception{
-		MemberVO vo = new MemberVO();
-		vo.setUserid("user00");
-		vo.setUserpw("user00");
-		vo.setUsername("USER00");
-		vo.setEmail("user00@aaa.com");
-		dao.insertMember(vo);
+	public void testReadMember() throws Exception{
+		dao.readWithPW("user00", "user00");
 	}
 }
